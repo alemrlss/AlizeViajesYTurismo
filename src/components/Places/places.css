@@ -1,0 +1,48 @@
+/* SECTION PLACE */
+.place {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+@media screen and (min-width: 800px) {
+    /* .place  {
+        flex-direction: row;
+    } */
+}
+
+.place__border {
+    display: flex;
+    justify-content: center;
+}
+
+.place__p {
+    color: #484848;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 17px;
+    line-height: 27px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.place__card {
+    border: solid 1px #48484838;
+    padding: 30px 15px;
+}
+
+.place__btn {
+    color: #484848;
+    background-color: #ffffff;
+    box-shadow: 1px 2px 5px 0 rgb(0 0 0 / 9%);
+    padding: 12px 20px;
+    border: solid 1px #48484838;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.place__btn:hover{
+    background-color: #ff385c;
+    color: white;
+}

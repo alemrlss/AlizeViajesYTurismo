@@ -1,0 +1,68 @@
+.favourite {
+    height: 100%;
+
+}
+
+.favourite__header {}
+
+.favourite__icon {
+    color: #ff385c;
+}
+
+.favourite__wrapper {}
+
+.favourite__account {
+    color: #706a6f;
+    font-size: 20px;
+}
+
+.favourite__card {}
+
+.favourite__form {}
+
+.favourite__email {}
+
+.favourite__title {}
+
+.favourite__input-wrapper {
+    margin: 16px 0 24px;
+}
+
+.favourite__input {
+    border: #706a6f solid 1px;
+    width: 100%;
+    height: 40px;
+    min-height: 40px;
+    padding: 0 10px;
+}
+
+.favourite__password {
+    color: #ff385c;
+}
+
+.favourite__btn {
+    border-radius: 9px;
+    width: 100%;
+    height: 45px;
+    background-color: red;
+    color: white;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.favourite__btn-span {
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.favourite__middle {
+    border-bottom: 1px solid #706a6f;
+}
+
+.favourite__access {}
+
+.favourite__access-btn {}
+
+.favourite__access-icon {}
+
+.favourite__acccess-p {}

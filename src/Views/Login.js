@@ -1,5 +1,5 @@
 import React from "react";
-import {TfiClose} from "react-icons/tfi";
+import { TfiClose } from "react-icons/tfi";
 import "./Login.css";
 
 export const Login = () => {
@@ -15,7 +15,7 @@ export const Login = () => {
             <div className="login__input-wrapper">
               <input
                 className="login__input"
-                placeholder="email"
+                placeholder="Email"
                 type="email"
               />
             </div>
@@ -23,8 +23,21 @@ export const Login = () => {
               <span className="login__btn-span">Continuar</span>
             </button>
           </form>
-          <div></div>
-          <div></div>
+          <div className="login__middle"></div>
+          <div className="login__access">
+            <button className="login__access-btn">
+              <span className="login__access-icon login__access-icon--google"></span>
+              <p className="login__acccess-p">Continuar con Google</p>
+            </button>
+            <button className="login__access-btn login__access-btn--apple">
+              <span className="login__access-icon login__access-icon--apple"></span>
+              <p className="login__acccess-p">Continuar con Apple</p>
+            </button>
+            <button className="login__access-btn">
+              <span className="login__access-icon login__access-icon--facebook"></span>
+              <p className="login__acccess-p">Continuar con Facebook</p>
+            </button>
+          </div>
         </div>
       </div>
     </div>

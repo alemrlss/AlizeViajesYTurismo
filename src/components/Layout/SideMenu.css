@@ -45,30 +45,28 @@
     align-items: center;
     padding-bottom: 8px;
     margin-bottom: 20px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
 }
+
 
 .side__icon-close {
     color: #ff385c;
     align-items: center;
     height: 100%;
+    font-size: 20px;
 }
 
 .side__title {
     color: #ff385c;
     font-size: 40px;
-    margin-left: 30px;
+
     padding-bottom: 10px
-        /* background-size: 140px 25px; */
-        /* height: 25px; */
-        /* margin-left: 8px;
-    width: 140px; */
 }
 
 .side__nav {}
 
-.side__nav-ul {
-    
-}
+.side__nav-ul {}
 
 .side__nav-li {}
 
@@ -77,4 +75,5 @@
     text-decoration: none;
     display: block;
     height: 40px;
+    font-weight: 700;
 }

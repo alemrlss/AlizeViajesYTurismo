@@ -2,17 +2,14 @@ import React from "react";
 import { BsSuitHeart } from "react-icons/bs";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { BsPerson } from "react-icons/bs";
-import { Link, useNavigate, useParams } from "react-router-dom";
+// import { Link, useNavigate, useParams } from "react-router-dom";
 
 import "./header.css";
-import { Component } from "react";
-export const Acceder = ({ myOnclic }) => (
-  <button onClick={myOnclic}>Prueba </button>
-);
+import { Link } from "react-router-dom";
 
-export const Header = ({ setIsOpenMenu }) => {
-  const navigate = useNavigate();
-  const params = useParams();
+export const Header = ({ setIsOpenMenu, setShowLogin, setIsFavorite }) => {
+  // const navigate = useNavigate();
+  // const params = useParams();
 
   return (
     <div className="header">
@@ -23,7 +20,7 @@ export const Header = ({ setIsOpenMenu }) => {
             onClick={() => setIsOpenMenu(true)}
           />
         </button>
-        <Link to="">
+        <Link to='/'>
           <p className="header__a">alize</p>
           <p className="header__p">az</p>
         </Link>
@@ -65,12 +62,15 @@ export const Header = ({ setIsOpenMenu }) => {
         </nav>
       </div>
       <div className="header__left">
-        <BsSuitHeart className="header__btn-menu" />
-        <button className="header__left-btn header__left-btn--white">
+        <BsSuitHeart
+          className="header__btn-menu"
+          onClick={() => setIsFavorite(true)}
+        />
+        <button onClick={() => setIsFavorite(true)} className="header__left-btn header__left-btn--white">
           Mis favoritos
         </button>
 
-        <button className="header__left-btn" onClick={() => navigate()}>
+        <button className="header__left-btn" onClick={() => setShowLogin(true)}>
           <BsPerson className="header__left-person" />
           Acceder
         </button>
@@ -78,9 +78,3 @@ export const Header = ({ setIsOpenMenu }) => {
     </div>
   );
 };
-
-export class MasSobreEventos extends Component {
-  render() {
-    return <h2>Mas sobre eventos</h2>;
-  }
-}

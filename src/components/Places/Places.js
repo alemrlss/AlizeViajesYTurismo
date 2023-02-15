@@ -5,19 +5,19 @@ import "./places.css";
 const places = [
   {
     name: "Parana",
-    image: "/images/parana.jpg",
+    image: "/Images/parana.jpg",
   },
   {
     name: "Salta",
-    image: "/images/salta.jpg",
+    image: "/Images/salta.jpg",
   },
   {
     name: "Colon",
-    image: "/images/colon.jpg",
+    image: "/Images/colon.jpg",
   },
   {
     name: "Corrientes",
-    image: "/images/Corrientes.jpg",
+    image: "/Images/corrientes.jpg",
   },
 ];
 

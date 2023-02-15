@@ -1,5 +1,5 @@
 .header {
-    height: 50px;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -94,8 +94,11 @@
     text-decoration: none;
     font-size: 15px;
     color: #706a6f;
+    font-weight: 800;
 }
-
+.header__nav-a:hover{
+    opacity: 0.6;
+}
 .header__nav-p {
     color: #ff385c;
     opacity: 0.9;

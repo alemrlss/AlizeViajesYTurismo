@@ -20,7 +20,7 @@ export const Header = ({ setIsOpenMenu, setShowLogin, setIsFavorite }) => {
             onClick={() => setIsOpenMenu(true)}
           />
         </button>
-        <Link to='/'>
+        <Link to="/">
           <p className="header__a">alize</p>
           <p className="header__p">az</p>
         </Link>
@@ -29,34 +29,34 @@ export const Header = ({ setIsOpenMenu, setShowLogin, setIsFavorite }) => {
         <nav className="header__nav">
           <ul className="header__nav-ul">
             <li className="header__nav-li">
-              <a className="header__nav-a" href="">
+              <Link className="header__nav-a" to="/destinos">
                 Destinos
-              </a>
+              </Link>
             </li>
             <li className="header__nav-li">
-              <a className="header__nav-a" href="">
+              <Link className="header__nav-a" to="/beneficios">
                 Beneficios
-              </a>
+              </Link>
             </li>
             <li className="header__nav-li">
-              <a className="header__nav-a" href="">
+              <Link className="header__nav-a" to="/alquiler">
                 Alquiler de Buses
-              </a>
+              </Link>
             </li>
             <li className="header__nav-li">
-              <a className="header__nav-a" href="">
+              <Link className="header__nav-a" to="/info">
                 Info para viajeros
-              </a>
+              </Link>
             </li>
             <li className="header__nav-li">
-              <a className="header__nav-a" href="">
+              <Link className="header__nav-a" to="/devolucion">
                 Devolucion de pasajes
-              </a>
+              </Link>
             </li>
             <li className="header__nav-li">
-              <a className="header__nav-a" href="">
+              <Link className="header__nav-a" to="/club">
                 Club Recorrer
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
@@ -66,7 +66,10 @@ export const Header = ({ setIsOpenMenu, setShowLogin, setIsFavorite }) => {
           className="header__btn-menu"
           onClick={() => setIsFavorite(true)}
         />
-        <button onClick={() => setIsFavorite(true)} className="header__left-btn header__left-btn--white">
+        <button
+          onClick={() => setIsFavorite(true)}
+          className="header__left-btn header__left-btn--white"
+        >
           Mis favoritos
         </button>
 

@@ -1,6 +1,6 @@
-/* *{
-  overflow: hidden;
-} */
+* {
+  box-sizing: border-box;
+}
 
 
 body {
@@ -24,6 +24,17 @@ a:hover {
 } */
 
 .container {
-  max-width: 1344px;
+
   margin: 0 auto;
+}
+
+.btn {
+  width: 12%;
+  padding: 12px;
+  background-color: #ff385c;
+  border-radius: 12px;
+  border: none;
+  font-size: 20px;
+  font-weight: 600;
+
 }

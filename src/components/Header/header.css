@@ -194,3 +194,9 @@
     cursor: pointer;
     color: #706a6f;
 }
+.header__menu-component{
+    position: relative;
+    padding: 0;
+    display: block;
+    z-index: 997;
+}

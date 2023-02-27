@@ -2,8 +2,15 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import { Layout } from "../components/Layout/Layout";
-import { Destino } from "../Views/Destino";
-import { Home } from "../Views/Home";
+import {
+  Home,
+  Destino,
+  Beneficios,
+  Alquiler,
+  Devolucion,
+  Info,
+  Club
+} from "../Views";
 
 export const AppRoutes = () => {
   return (
@@ -23,6 +30,51 @@ export const AppRoutes = () => {
           element={
             <Layout>
               <Destino />
+            </Layout>
+          }
+        />
+        <Route />
+        <Route
+          path="/beneficios"
+          element={
+            <Layout>
+              <Beneficios />
+            </Layout>
+          }
+        />
+        <Route />
+        <Route
+          path="/alquiler"
+          element={
+            <Layout>
+              <Alquiler />
+            </Layout>
+          }
+        />
+        <Route />
+        <Route
+          path="/info"
+          element={
+            <Layout>
+              <Info />
+            </Layout>
+          }
+        />
+        <Route />
+        <Route
+          path="/devolucion"
+          element={
+            <Layout>
+              <Devolucion />
+            </Layout>
+          }
+        />
+        <Route />
+        <Route
+          path="/club"
+          element={
+            <Layout>
+              <Club />
             </Layout>
           }
         />

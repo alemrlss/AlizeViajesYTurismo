@@ -1,0 +1,388 @@
+.destino {
+
+    margin-top: 50px;
+}
+
+.destino__wrapper {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    /* text-align: center  ; */
+}
+
+.destino__img {
+    width: 100%;
+}
+
+.destino__p {
+    font-size: 22px;
+    font-weight: 600;
+    color: #706a6f;
+    margin-bottom: 40px;
+}
+
+.destino__card {
+    display: grid;
+}
+
+.destino__card-w {
+    height: 100%;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20vh;
+    padding-bottom: 20px;
+}
+
+
+.destino__card-image {
+    border-radius: 120px;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    transition: transform .5s ease-in-out;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.destino__card-image:hover::after {
+    transform: translateY(0);
+    border-radius: 15px;
+}
+
+.destino__card-image::after {
+    content: '¿Vamos?';
+    font-size: 35px;
+    color: white;
+    background-color: #ff385c;
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: 0.7s;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+.destino__card-image--centro {
+    background-image: url(/public/Images/centro.jpg);
+}
+
+.destino__card-image--norte {
+    background-image: url(/public/Images/norte.jpg);
+}
+
+.destino__card-image--litoral {
+    background-image: url(/public/Images/litoral.jpg);
+}
+
+.destino__card-image--noreste {
+    background-image: url(/public/Images/noreste.jpg);
+}
+
+.destino__card-image--brasil {
+    background-image: url(/public/Images/brasil.jpg);
+}
+
+.destino__card-image--uruguay {
+    background-image: url(/public/Images/uruguay.jpg);
+}
+
+.destino__card-image--bolivia {
+    background-image: url(/public/Images/bolivia.jpg);
+}
+
+.destino__card-image--cuyo {
+    background-image: url(/public/Images/cuyo.jpg);
+}
+
+.destino__card-image--patagonia {
+    background-image: url(/public/Images/centro.jpg);
+}
+
+.destino__card-image--mr {
+    background-image: url(/public/Images/mapa-de-rutas.jpg);
+}
+
+.destino__card-centro {}
+
+.destino__card-go {}
+
+.destino__card-more {}
+
+.destino__card-text {
+    font-size: 22px;
+    font-weight: 600;
+    color: #706a6f;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.destino__card-strong {}
+
+.destino__card-a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #ff385c;
+}
+
+.destino__card-a:hover {
+    opacity: 0.7;
+}
+
+.destino__card-hoverbox {
+    background-color: blue;
+    height: 100%;
+    position: relative;
+    display: none;
+}
+
+.destino__card-location {
+
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.destino__image-mr {}
+
+.destino__site {
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+
+
+.destino__site-title:hover {
+    /* display: block; */
+}
+
+/* .destino__site-title:hover {
+    background-color: #ff385c;
+    color: white;
+} */
+
+/* .destino__site-location:hover {
+    background: #ff385c;
+    width: 100%;
+    height: 200px;
+    margin: 20px;
+    clip-path: circle(50% at top left);
+    transition-property: clip-path;
+    transition-duration: 5s;
+    cursor: pointer;
+    border: solid 1px red;
+} */
+
+.destino__site-subtitle:hover {
+    display: block;
+}
+
+.destino__site-ul {
+   
+
+}
+
+.destino__site-li {
+    list-style: none;
+}
+
+.destino__site-contact {
+    font-size: 15px;
+}
+
+.destino__site-soporte {
+    padding-left: 4px;
+    text-decoration: none;
+    color: #ff385c;
+}
+
+
+
+
+
+.destino__site-location {
+    box-shadow: 0 0 10px -3px #5a585a;
+    border-radius: 6px;
+    width: 100%;
+    background-color: #746f73d0;
+    padding: 20px;
+}
+
+.destino__site-location:hover {
+    opacity: 0.8;
+}
+
+.destino__site-location--centro {
+    box-shadow: 0 0 10px -3px #706a6f;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+}
+
+.destino__site-location--noreste {
+    box-shadow: 0 0 10px -3px #706a6f;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+}
+
+.destino__site-location--bolivia {
+    box-shadow: 0 0 10px -3px #706a6f;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+}
+
+.destino__site-location--norte {
+    box-shadow: 0 0 10px -3px #706a6f;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+}
+
+.destino__site-location--brasil {
+    box-shadow: 0 0 10px -3px #706a6f;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+}
+
+.destino__site-location--cuyo {
+    box-shadow: 0 0 10px -3px #706a6f;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+}
+
+.destino__site-location--litoral {
+    box-shadow: 0 0 10px -3px #706a6f;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+}
+
+.destino__site-location--uruguay {
+    box-shadow: 0 0 10px -3px #706a6f;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+}
+
+.destino__site-location--patagononia {
+    box-shadow: 0 0 10px -3px #706a6f;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+}
+
+/* 
+.destino__site-location--centro:hover {
+    height: 200px;
+    width: 200px;
+} */
+
+/* .location--centro:hover{
+background-color: blue;
+background-color: white;
+
+} */
+
+.destino__site-title {
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.destino__site-title:hover {
+    /* background-color: #ff385c; */
+    width: 100%;
+    /* padding: 10px; */
+    /* margin: 20px auto; */
+    /* max-width: 500px;
+    box-shadow: 0 0 10px -3px #706a6f;
+    border-radius: 6px; */
+    color: #ff385c;
+    /* color: #ff385c; */
+    /* padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px -3px #706a6f; */
+}
+
+.destino__site-subtitle {
+   /* display: none;  */
+ 
+}
+
+
+.h2 {
+    display: none;
+}
+
+
+.accordion {
+    background-color: white;
+    width: 80%;
+    padding: 20px;
+    margin: 60px auto;
+    max-width: 500px;
+    box-shadow: 0 0 10px -3px #706a6f;
+    border-radius: 6px;
+}
+
+.accordion__link {
+    display: inline-block;
+    color: #ff385c;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.accordion__item {
+    display: grid;
+}
+
+
+.img {
+    height: 200px;
+}
+
+.destino__site-group {
+    display: flex;
+    /* border: solid 1px rgb(17, 0, 255); */
+    gap: 100px;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+.destino__site-contact {
+    display: flex;
+    font-size: 20px;
+    color: #706a6f;
+    font-weight: bold;
+}
+
+.destino__site-mr {
+    color: #706a6f;
+    font-size: 30px;
+}
+
+.destino__site-soporte:hover {
+    opacity: 0.7;
+}
+.bck{
+    background-color: #a39ea2;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+}

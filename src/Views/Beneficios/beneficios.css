@@ -1,0 +1,446 @@
+/* BENEFICIOS */
+
+
+.beneficios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.beneficios__img {
+    display: flex;
+    height: 400px;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.beneficios__btn {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    /* position: relative;
+    left: 550px; */
+}
+
+.beneficios__btn:hover {
+    opacity: 0.9;
+
+}
+
+.benficios__a {
+    color: white;
+    text-decoration: none;
+}
+
+.beneficios__h2 {
+    color: #706a6f;
+    margin-bottom: 20px;
+}
+
+.beneficios__p {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #706a6f;
+    font-weight: 500;
+}
+
+.beneficios__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.beneficios__strong {
+    display: flex;
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+
+/* 365 */
+
+.clarin365 {}
+
+.clarin365__img {
+    display: flex;
+    height: 400px;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.clarin365__h1 {
+    color: #706a6f;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.clarin365__p {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #706a6f;
+    font-weight: 500;
+}
+
+.clarin365__span {
+    display: flex;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #706a6f;
+    font-weight: 500;
+}
+
+.clarin365__a {
+    color: #ff385c;
+    text-decoration: none;
+    font-weight: 700;
+    padding-left: 6px;
+}
+
+.clarin365__a:hover {
+    opacity: 0.6;
+}
+
+.clarin365__strong {
+    padding-left: 6px;
+}
+
+.tigre__background-video {
+    background-image: url(../../../public/Images/bck-video.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    touch-action: manipulation;
+}
+
+/* PARTINGLINE */
+
+
+.partingline {
+    display: flex;
+    justify-content: center;
+}
+
+.partingline__img {
+    width: 80%;
+    height: 9px;
+    background-color: #706a6f;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+
+/* TIGRE */
+
+.tigre {}
+
+.tigre__img {
+    display: flex;
+    height: 400px;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.tigre__h1 {
+    color: #706a6f;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.tigre__span {
+    display: flex;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #706a6f;
+    font-weight: 500;
+}
+
+.tigre__p {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #706a6f;
+    font-weight: 500;
+}
+
+.tigre__a {
+    color: #ff385c;
+    text-decoration: none;
+    font-weight: 700;
+    padding-left: 6px;
+}
+
+.tigre__a:hover {
+    opacity: 0.6;
+}
+
+.tigre__wrapper {}
+
+.tigre__iframe {
+    margin-bottom: 40px;
+    height: 70vh;
+    width: 70vw;
+}
+
+.tigre__t {
+    color: #706a6f;
+    margin-bottom: 40px;
+}
+
+/* ENTRERRIANO */
+
+.entrerriano {}
+
+.entrerriano__img {
+    display: flex;
+    height: 400px;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.entrerriano__h2 {
+    font-size: 40px;
+    color: #706a6f;
+    /* margin-bottom: 20px; */
+}
+
+.entrerriano__span {
+    font-size: 30px;
+    color: #706a6f;
+    padding-left: 4px;
+}
+
+.entrerriano__p {
+    color: #706a6f;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.entrerriano__img-termas {}
+
+.entrerriano__img-termas-1 {
+    height: 30vh;
+}
+
+.entrerriano__img-termas-2 {
+    height: 30vh;
+}
+
+.entrerriano__img-termas-3 {
+    height: 30vh;
+}
+
+.entrerriano__img-termas-4 {
+    height: 30vh;
+}
+
+.entrerriano__btn {
+    color: white;
+    width: 20%;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.entrerriano__btn:hover {
+    opacity: 0.6;
+}
+
+.entrerriano__form {
+    background-color: #f5f5f5;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    padding: 20px 15px;
+    margin-top: 50px;
+}
+
+.entrerriano__i {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    border: 1px solid #f5f5f5;
+}
+
+.entrerriano__i:focus {
+    outline: none;
+}
+
+.entrerriano__btn-enviar {}
+
+.entrerriano__a {}
+
+.entrerriano__p-1 {
+    font-weight: 700;
+    margin-bottom: 10px;
+    ;
+    /* margin-bottom: 20px; */
+}
+
+.entrerriano__descuentos {
+    font-size: 30px;
+    color: #706a6f;
+}
+
+.entrerriano__wrapper {
+    margin-bottom: 30px;
+}
+
+.entrerriano__20 {
+    color: #706a6f;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.entrerriano__viajar {
+    margin-bottom: 30px;
+}
+
+.entrerriano__link {
+    text-decoration: none;
+    color: #ff385c;
+    font-weight: 600;
+    font-size: 20px;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.entrerriano__link:hover {
+    opacity: 0.6;
+}
+
+.entrerriano__link-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.entrerriano__descuentos-termas {
+    margin-bottom: 60px;
+    font-size: 40px;
+    color: #706a6f;
+    font-weight: 700;
+}
+
+.entrerriano__wrapper-img {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    margin-bottom: 50px;
+    gap: 30px;
+}
+
+.entrerriano__text {
+    margin-bottom: 20px;
+    color: #706a6f;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.entrerriano__btn-enviar {
+    color: white;
+    cursor: pointer;
+}
+
+.entrerriano__btn-enviar:hover {
+    opacity: 0.9;
+}
+
+.entrerriano__wrapper-archivo {
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.entrerriano__btn-select {
+    margin-right: 12px;
+    padding: 0px 10px;
+}
+
+.entrerriano__descuento-pasajes {
+    font-size: 14px;
+    color: #706a6f;
+    margin-bottom: 40px;
+}
+
+/* SECTION HOTEL */
+
+.hotel {}
+
+.hotel__container {}
+
+.hotel__banner {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.hotel__wrapper-img {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.hotel__img {
+    height: 300px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+.hotel__h1 {
+    font-size: 45px;
+    color: #706a6f;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.hotel__span {
+    font-size: 20px;
+    color: #706a6f;
+    font-weight: 500;
+}
+
+.hotel__span-brasil {
+    font-size: 40px;
+    color: #706a6f;
+    margin-bottom: 20px;
+}
+
+.hotel__p {
+    color: #706a6f;
+    margin-bottom: 20px;
+}
+
+.hotel__wrapper {
+    margin-top: 30px;
+}
+
+.hotel__li {}
+
+.hotel__ul {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.hotel__h3 {}
+
+.hotel__strong {}
+.hotel__ic{
+    height: 100px;
+
+}
+.hotel__span-package{
+   
+}

@@ -5,13 +5,14 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 40px;
+    width: 100vw;
+}
+.place__container{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: grid;
 }
 
-@media screen and (min-width: 800px) {
-    /* .place  {
-        flex-direction: row;
-    } */
-}
+
 
 .place__border {
     display: flex;
@@ -45,4 +46,28 @@
 .place__btn:hover{
     background-color: #ff385c;
     color: white;
+}
+.place__wrapper{
+    display: grid;
+   
+    gap: 60px;
+}
+@media screen and (min-width: 600px) {
+    .place__wrapper  {
+        display: grid;
+        
+    }
+}
+@media screen and (min-width: 800px) {
+    .place__wrapper  {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .place__wrapper  {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 100%;
+    }
 }

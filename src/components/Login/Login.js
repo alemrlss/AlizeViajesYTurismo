@@ -6,23 +6,23 @@ export const Login = ({ showLogin, setShowLogin }) => {
   const [display, setDisplay] = useState("flex");
   const [isRegister, setIsRegister] = useState(false);
 
-  useEffect(() => {
-    setTimeout(() => {
-      showLogin ? setDisplay("flex") : setDisplay("none");
-    }, 200);
-  }, [showLogin]);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     showLogin ? setDisplay("flex") : setDisplay("none");
+  //   }, 200);
+  // }, [showLogin]);
 
   return (
     <div
       style={{ display: display }}
       // onClick={() => setShowLogin(false)}
-      className={showLogin ? "login" : "login login--open login--out"}
+      className={showLogin ? "login" : " login--open login--out"}
     >
       <div
         className={
           showLogin
             ? "login__container "
-            : " login__container login__container--out "
+            : " login__container "
         }
       >
         {isRegister ? (
@@ -69,7 +69,7 @@ export const Login = ({ showLogin, setShowLogin }) => {
             </div>
           </>
         )}
-        <a className="login__access-password" href="#" onClick={() => setIsRegister(isRegister ? false : true)}>
+        <a className="login__access-password" href="https://trello.com/b/WXCWhDqJ/alize" onClick={() => setIsRegister(isRegister ? false : true)}>
           {isRegister
             ? "Ya tengo cuenta en fotocasa"
             : "No tengo cuenta y quiero registrarme"}

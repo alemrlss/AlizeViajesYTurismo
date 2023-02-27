@@ -1,5 +1,6 @@
 .login {
-    display: flex;
+    display: none;
+    /* display: flex;
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
@@ -9,10 +10,11 @@
     left: 0;
     position: fixed;
     right: 0;
-    top: 0;
+    top: 0; */
 }
 
 .login.login--open {
+    animation: modal-overlay-out .25s both;
     display: -webkit-flex;
     display: flex;
     -webkit-justify-content: center;
@@ -28,6 +30,7 @@ body.login--open {
 
 .login--out {
     animation: modal-overlay-out .25s both;
+    /* display: none; */
 }
 
 .login::before {
@@ -67,6 +70,7 @@ body.login--open {
     z-index: 1100;
     padding: 32px 63px;
 }
+
 @media screen and (max-width: 600px) {
 
     .login__container {
@@ -108,6 +112,8 @@ body.login--open {
 
 .login__icon {
     color: #ff385c;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 .login__card {
@@ -147,11 +153,13 @@ body.login--open {
     color: white;
     border: none;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 .login__btn-span {
     font-size: 16px;
     font-weight: 800;
+
 }
 
 .login__middle {
@@ -174,7 +182,7 @@ body.login--open {
     display: flex;
     flex-direction: column;
     margin-bottom: 18px;
-   
+
 }
 
 .login__access-btn {
@@ -188,6 +196,7 @@ body.login--open {
     width: 100%;
     margin-bottom: 8px;
     background-color: white;
+    cursor: pointer;
 }
 
 .login__access-btn--apple {
@@ -198,10 +207,11 @@ body.login--open {
 .login__access-p {
     font-size: 18px;
 }
+
 @media screen and (max-width: 600px) {
 
     .login__container {
-     font-size: 18px;
+        font-size: 18px;
     }
 }
 
@@ -231,10 +241,14 @@ body.login--open {
 }
 
 .login__access-password {
+    text-align: center;
     font-size: 18px;
     text-decoration: none;
     color: #ff385c;
     font-weight: 600;
+}
+.login__access-password:hover{
+  text-decoration: underline;
 }
 
 

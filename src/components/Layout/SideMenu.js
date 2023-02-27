@@ -2,6 +2,7 @@ import React from "react";
 
 import { TfiClose } from "react-icons/tfi";
 import "./SideMenu.css";
+import { Link } from "react-router-dom";
 
 export const SideMenu = ({ isOpenMenu, setIsOpenMenu }) => {
   return (
@@ -14,40 +15,40 @@ export const SideMenu = ({ isOpenMenu, setIsOpenMenu }) => {
               className="side__icon-close"
               onClick={() => setIsOpenMenu(false)}
             />
-            <h1 className="side__title">alize</h1>
+            <Link to="/" className="side__title">alize</Link >
           </div>
 
           <nav className="side__nav">
             <ul className="side__nav-ul">
               <li className="side__nav-li">
-                <a className="side__nav-a" href="/">
+                <Link className="side__nav-a" to="/destinos">
                   Destinos
-                </a>
+                </Link>
               </li>
               <li className="side__nav-li">
-                <a className="side__nav-a" href="#">
+                <Link className="side__nav-a" to="/beneficios">
                   Beneficios
-                </a>
+                </Link>
               </li>
               <li className="side__nav-li">
-                <a className="side__nav-a" href="#">
+                <Link className="side__nav-a" to="/alquiler">
                   Alquiler de Buses
-                </a>
+                </Link>
               </li>
               <li className="side__nav-li">
-                <a className="side__nav-a" href="#">
+                <Link className="side__nav-a" to="/info">
                   Info para viajeros
-                </a>
+                </Link>
               </li>
               <li className="side__nav-li">
-                <a className="side__nav-a" href="#">
+                <Link className="side__nav-a" to="/pasajes">
                   Devolucion de pasajes
-                </a>
+                </Link>
               </li>
               <li className="side__nav-li">
-                <a className="side__nav-a" href="#">
+                <Link className="side__nav-a" to="/club">
                   Club Recorrer
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>

@@ -55,6 +55,7 @@
     align-items: center;
     height: 100%;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .side__title {
@@ -76,4 +77,7 @@
     display: block;
     height: 40px;
     font-weight: 700;
+}
+.side__nav-a:hover{
+    opacity: 0.6;
 }

@@ -24,6 +24,8 @@ const places = [
 export const Places = () => {
   return (
     <section className="place container">
+      <div className="place__wrapper container">
+
       {places.map(({ name, image }, i) => (
         <div key={i} className="place__border">
           <div className="place__card">
@@ -35,6 +37,7 @@ export const Places = () => {
           </div>
         </div>
       ))}
+      </div>
     </section>
   );
 };

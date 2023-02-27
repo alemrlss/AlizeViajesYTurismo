@@ -19,8 +19,8 @@ export const Layout = ({ children }) => {
       <Header setIsOpenMenu={setIsOpenMenu} setShowLogin={setShowLogin} setIsFavorite={setIsFavorite} />
       <SideMenu setIsOpenMenu={setIsOpenMenu} isOpenMenu={isOpenMenu} />
       {children}
-      <Login showLogin={showLogin} setShowLogin={setShowLogin} />
-      <Favorites isFavorite={isFavorite} setIsFavorite={setIsFavorite} />
+      {/* <Login showLogin={showLogin} setShowLogin={setShowLogin} /> */}
+      {/* <Favorites isFavorite={isFavorite} setIsFavorite={setIsFavorite} /> */}
       <Footer />
     </>
   );

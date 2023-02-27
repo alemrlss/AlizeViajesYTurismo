@@ -113,6 +113,7 @@
 
 .footer__h6 {
     font-size: 25px;
+    display: flex;
 }
 @media screen and (min-width: 600px) {
     .footer__h6 {

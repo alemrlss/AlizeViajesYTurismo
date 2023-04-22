@@ -200,3 +200,11 @@
     display: block;
     z-index: 997;
 }
+.link__password{
+    color: #ff385c;
+    font-weight: bold;
+}
+.link__password:hover{
+   text-decoration: underline;
+  
+}

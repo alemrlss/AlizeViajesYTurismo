@@ -198,6 +198,7 @@ export const Beneficios = () => {
               <video
                 className="tigre__video"
                 controls
+                autoPlay
                 src="https://www.youtube.com/embed/VLQolthKdI8?feature=oembed"
               >
                 <div className="tigre__background-video"></div>

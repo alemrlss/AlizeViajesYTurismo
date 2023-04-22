@@ -46,8 +46,8 @@ export const SideMenu = ({ isOpenMenu, setIsOpenMenu }) => {
                 </Link>
               </li>
               <li className="side__nav-li">
-                <Link className="side__nav-a" to="/club">
-                  Club Recorrer
+                <Link className="side__nav-a" to="/alquiler">
+                 Alquiler de buses
                 </Link>
               </li>
             </ul>

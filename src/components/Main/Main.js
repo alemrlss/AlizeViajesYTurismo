@@ -1,156 +1,129 @@
 import React from "react";
+import { CalendarIcon } from '@chakra-ui/icons'
+import SlideShow from '../SlideShow/slide';
 
+
+import {
+  NumberInput,
+  NumberInputField,
+  NumberInputStepper,
+  NumberIncrementStepper,
+  NumberDecrementStepper,
+  ChakraProvider,
+} from '@chakra-ui/react'
+import { BsPerson } from "react-icons/bs";
+import { FiMapPin } from "react-icons/fi";
 import { Carrousel } from "../Carrousel/Carrousel";
-import { BsFillPersonFill } from "react-icons/bs";
-import { BsSearch } from "react-icons/bs";
-import { DatePicker } from "../DatePicker/DatePicker";
+
+
 import { Places } from "../Places/Places";
 import { Regions } from "../Regions";
 
 
 import "./main.css";
+import { Box, Button, Card, CardFooter, CardHeader, Container, Heading, Input, SimpleGrid, Text } from "@chakra-ui/react";
+
+
+const images = ['Images/promocion-img1.jpg', 'Images/promocion-img2.jpg', 'Images/promocion-img3.jpg', 'Images/promocion-img4.jpg', 'Images/promocion-img5.jpg'];
+
 
 export const Main = () => {
   return (
-    <section className="main">
-      <div className="main__bck"></div>
+    <Box as="section" className="main">
+      <Box display='flex' justifyContent='center' position='relative' backgroundSize='cover' height='750px' backgroundImage='/Images/image-background-new.jpg'>
 
-      <section className="main__bp container">
-        <div className="main__bp-wp">
-          <h1 className="main__bp-t">Comprá tus pasajes acá</h1>
-        </div>
-        <div className="main__bp-card">
-          <div className="main__bp-1">
-            <p className="main__bp-p">Ciudad de origen</p>
-            <input
-              className="main__bp-i"
-              type="text"
-              placeholder="¿Desde dónde viajas?"
-              onChange={(e) => console.log(e.target.value)}
-            />
-            <p className="main__bp-p">Ciudad de destino</p>
-            <input
-              className="main__bp-i"
-              type="text"
-              placeholder="¿Hasta dónde viajas?"
-            />
-          </div>
-          <div className="main__bp-2">
-            <p className="main__bp-p">Salida</p>
-            <input className="main__bp-i" type="text" />
-            <p className="main__bp-p">Regreso</p>
-            <input className="main__bp-i" type="text" />
-          </div>
-          <div className="main__bp-3">
-            <div className="main__bp-g">
-              <BsFillPersonFill className="main__bp-icon" />
-              <p className="main__bp-p">Pasajeros</p>
-            </div>
-            <select className="main__bp-pasajeros">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-            </select>
-            <button className="main__bp-btn">Buscar</button>
-          </div>
-        </div>
-        <div className="main__bp-check">
-          <div className="main__bp-in">
-            <label className="main__bp-l">
-              <input className="main__bp-regreso" type="radio" />
-              Sólo Ida
-            </label>
-          </div>
-          <div>
-            <label className="main__bp-l">
-              <input className="main__bp-regreso" type="radio" />
-              Ida y Vuelta
-            </label>
-          </div>
-        </div>
-      </section>
 
-      <div className="main__card">
-        <h2 className="main__search-t">Comprá tus pasajes acá</h2>
-        <div className="main__form">
-          <div className="main__selector">
-            <div className="flex">
-              <div className="main__input-wrapper">
-                <p className="main__p">Ciudad de origen</p>
-                <input
-                  placeholder="¿Desde dónde viajas?"
-                  className="main__origen"
-                  name="lucas"
-                  type="text"
-                />
-              </div>
-              <div className="main__input-wrapper">
-                <p className="main__p">Ciudad de destino</p>
-                <input
-                  placeholder="¿Hasta dónde viajas?"
-                  className="main__destino"
-                  type="text"
-                />
-              </div>
-              <div className="main__input-wrapper">
-                <p className="main__p">Salida</p>
-                <DatePicker className="main__salida" />
-              </div>
-            </div>
+        <Container alignItems='center' bottom='2px' position='absolute' height='500px' display={'flex'} justifyContent='center' marginTop={"20px"} >
+          <SimpleGrid spacing={5} templateColumns='1fr 1fr'>
+            <Card padding='15px' sx={{ w: "600px", bg: "#706A6F" }}>
 
-            <DatePicker className="main__salida" />
+              <CardHeader>
+                <Heading sx={{ color: "white" }} size='md'>Comprá tus pasajes acá</Heading>
+              </CardHeader>
 
-            <p className="main__p">Regreso</p>
-            <input className="main__regreso" type="text" name="" />
-            <div className="main__w">
-              <BsFillPersonFill className="main__icon" />
-              <p className="main__p">Pasajeros</p>
-            </div>
-            <select className="main__pasajeros">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-            </select>
-            <div className="main__btn-w">
-              <button className="main__btn">
-                Buscar
-                <BsSearch className="main__icon-search" />
-              </button>
-            </div>
+              <Box marginBottom='25px'>
+                <Box marginBottom='12px' gap='8px' alignItems='center' display='flex'>
+                  <FiMapPin color="white" />
+                  <Text sx={{ color: "white" }}>Origen</Text>
+                </Box>
+                <Input focusBorderColor="#FF385C" bg='white' placeholder='Ingrese ciudad o terminal' />
+              </Box>
 
-            <ul className="main__radios">
-              <li className="main__li">
-                <div className="main__radio">
-                  <label className="main__input">
-                    <input
-                      className="main__checked"
-                      name="TipoViaje"
-                      type="radio"
-                    />
-                    Sólo Ida
-                  </label>
-                </div>
-              </li>
-              <li>
-                <div className="main__radio">
-                  <label className="main__input">
-                    <input
-                      className="main__checked"
-                      name="TipoViaje"
-                      type="radio"
-                    />
-                    Ida y Vuelta
-                  </label>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+              <Box marginBottom='25px'>
+                <Box marginBottom='12px' gap='8px' alignItems='center' display='flex'>
+
+                  <FiMapPin color="white" />
+                  <Text sx={{ color: "white" }}>Destino</Text>
+                </Box>
+                <Input focusBorderColor="#FF385C" bg='white' placeholder='Ingrese ciudad o terminal' />
+              </Box>
+
+              <SimpleGrid columns={[2, null, 3]} spacing='40px'>
+                <Box height='80px'>
+                  <Box paddingBottom='8px' gap='15px' alignItems='center' display='flex'>
+                    <CalendarIcon color='white' />
+                    <Text color="white">Partida</Text>
+
+                  </Box>
+
+                  <Input focusBorderColor="#FF385C" bg='white' opacity='0.5' cursor='pointer'
+                    placeholder="Seleccione fecha"
+                    size="md"
+                    type="datetime-local"
+                  />
+                </Box>
+                <Box height='80px'>
+                  <Box paddingBottom='8px' gap='15px' alignItems='center' display='flex'>
+                    <CalendarIcon color='white' />
+                    <Text color="white">Regreso (opcional)</Text>
+                  </Box>
+                  <Input focusBorderColor="#FF385C" bg='white' placeholder='Seleccione Fecha'>
+
+                  </Input>
+
+                </Box>
+                <Box height='80px'>
+                  <Box paddingBottom='8px' gap='15px' alignItems='center' display='flex'>
+                    <Text color="white">Pasajeros</Text>
+                    <BsPerson color="white" />
+                  </Box>
+                  <NumberInput focusBorderColor="#FF385C" borderRadius='50px' bg='white' size='sm' maxW={20} defaultValue={10} min={1}>
+                    <NumberInputField />
+                    <NumberInputStepper>
+                      <NumberIncrementStepper />
+                      <NumberDecrementStepper />
+                    </NumberInputStepper>
+                  </NumberInput>
+                </Box>
+
+              </SimpleGrid>
+
+              <CardFooter>
+                <Button  borderRadius='50px' _hover={{ bg: 'red.400', color: "white" }} color='black' w='100%'>BUSCAR PASAJES</Button>
+              </CardFooter>
+            
+            </Card>
+
+
+
+{/* 
+            <Card width='100%' alignItems='center' sx={{ w: "700px", }}>
+
+              <ChakraProvider  >
+                <SlideShow images={images} />
+              </ChakraProvider>
+            </Card> */}
+
+
+
+          </SimpleGrid>
+
+
+
+        </Container>
+      </Box>
+
+
       <section className="sponsor">
         <div className="sponsor__w">
           <h2 className="sponsor__t">
@@ -159,9 +132,7 @@ export const Main = () => {
           </h2>
         </div>
         <Carrousel />
-        {/* <div className="sponsor__carrusel">
-          <img className="sponsor__img" alt="" />
-        </div> */}
+
         <h2 className="sponsor__t">
           Te invitamos a conocer algunos <br />
           de nuestros destinos
@@ -205,9 +176,9 @@ export const Main = () => {
           <video
             className="download__video"
             src="https://carontestudio.com/img/f4.mp4"
-            autoplay="true"
-            muted="true"
-            loop="true"
+            autoPlay
+            muted
+            loop
             poster="https://carontestudio.com/img/contacto.jpg"
           ></video>
           <div className="download__wrapper-video">
@@ -235,6 +206,6 @@ export const Main = () => {
           </div>
         </section>
       </section>
-    </section>
+    </Box>
   );
 };

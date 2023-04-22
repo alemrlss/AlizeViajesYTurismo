@@ -10,9 +10,9 @@
 }
 
 .main__bck {
-    background-image: url('/public/Images/image-background-new.jpg');
-    background-size: cover;
-    height: 350px;
+    /* background-image: url('/public/Images/image-background-new.jpg'); */
+    /* background-size: cover; */
+    /* height: 350px; */
 }
 
 @media screen and (min-width: 800px) {

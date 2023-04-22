@@ -6,11 +6,15 @@ import {
   Home,
   Destino,
   Beneficios,
-  Alquiler,
+  Terminales,
   Devolucion,
   Info,
-  Club
+  Alquiler,
+ 
 } from "../Views";
+import { EntreRios } from "../Views/EntreRios";
+
+
 
 export const AppRoutes = () => {
   return (
@@ -43,14 +47,24 @@ export const AppRoutes = () => {
           }
         />
         <Route />
-        <Route
-          path="/alquiler"
-          element={
-            <Layout>
-              <Alquiler />
-            </Layout>
-          }
-        />
+        <Route path="/terminales">
+          <Route
+          index
+            element={
+              <Layout>
+                <Terminales />
+              </Layout>
+            }
+          />
+          {/* <Route
+            path="/entreRios"
+            element={
+              <Layout>
+                <EntreRios />
+              </Layout>
+            }
+          /> */}
+        </Route>
         <Route />
         <Route
           path="/info"
@@ -71,14 +85,22 @@ export const AppRoutes = () => {
         />
         <Route />
         <Route
-          path="/club"
+          path="/alquiler"
           element={
             <Layout>
-              <Club />
+              <Alquiler />
             </Layout>
           }
         />
         <Route />
+        <Route
+          path="/entrerios"
+          element={
+            <Layout>
+              <EntreRios />
+            </Layout>
+          }
+        />
       </Routes>
     </Router>
   );

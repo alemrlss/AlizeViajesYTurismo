@@ -1,3 +1,6 @@
+
+
+
 import React from "react";
 import { Heading, Box, Text } from '@chakra-ui/react'
 
@@ -13,7 +16,7 @@ export const Info = () => {
 
         <p className="compra__p">En este video, te mostramos el paso a paso para que puedas comprar online tus pasajes en micro de forma ágil y segura.</p>
         <p className="compra__p">Encontrá los mejores precios, elegí tu asiento y pagá tu viaje en cuotas sin interés.??</p>
-        <iframe className="compra__iframe" src="https://www.youtube.com/embed/YcTFLFin8dk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe className="compra__iframe" src="https://www.youtube.com/embed/YcTFLFin8dk" title="YouTube video player" frameborder="0"  allowfullscreen></iframe>
       </div>
     </section>
 
@@ -118,7 +121,7 @@ export const Info = () => {
         <img className="ticket__img" src="Images/e-ticket.jpg" alt="" />
         <div className="ticket__wrapper">
 
-          <iframe className="ticket__iframe" src="https://www.youtube.com/embed/Uoae3TlRCQM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          {/* <iframe className="ticket__iframe" src="https://www.youtube.com/embed/Uoae3TlRCQM" title="YouTube video player" frameborder="0" allow="accelerometer; autoPlay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */}
           <img className="ticket__img-online" src="Images/compra-online.jpg" alt="" />
         </div>
       </div>
@@ -190,11 +193,52 @@ export const Info = () => {
     <section className="venta">
       <div className="venta container">
         <div className="venta__wrapper">
+          <iframe className="venta__iframe" title="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d406.40112367299895!2d-58.83808138698865!3d-27.4732850661035!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456ca29bd02dab%3A0x651a7746529370de!2sAliz%C3%A9%20Viajes%20y%20Turismo!5e0!3m2!1sen!2sus!4v1677627492464!5m2!1sen!2sus" width="600" height="450" style={{ border: 0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-          <iframe title="hola" src="https://www.google.com/maps/d/embed?mid=1BMtDbiqHYFxdbEqs-R71-G_ewnjCqyI&ehbc=2E312F" width="640" height="480"></iframe>
         </div>
-        <p> Consultá los puntos de venta en tu provincia:</p>
-        <a href="/">CORRIENTES</a>
+        <p className="venta__p"> Consultá los puntos de venta en tu provincia:</p>
+        <div className="venta__wrapper-points">
+
+          <div className="venta__points">
+            <a className="venta__a" href="/">CORRIENTES</a>
+            <a className="venta__a" href="/">BUENOS AIRES</a>
+            <a className="venta__a" href="/">CATAMARCA</a>
+            <a className="venta__a" href="/">CHACO</a>
+            <a className="venta__a" href="/">CORDOBA</a>
+          </div>
+
+          <div className="venta__points">
+            <a className="venta__a" href="/">ENTRE RIOS</a>
+            <a className="venta__a" href="/">FOMROSA</a>
+            <a className="venta__a" href="/">JUJUY</a>
+            <a className="venta__a" href="/">LA PAMPA</a>
+            <a className="venta__a" href="/">LA RIOJA</a>
+          </div>
+
+          <div className="venta__points">
+            <a className="venta__a" href="/">BOLIVIA</a>
+            <a className="venta__a" href="/">BRASIL</a>
+            <a className="venta__a" href="/">UTUGUAY</a>
+            <a className="venta__a" href="/">MENDOZA</a>
+            <a className="venta__a" href="/">MISIONES</a>
+          </div>
+
+          <div className="venta__points">
+            <a className="venta__a" href="/">NEUQUEN</a>
+            <a className="venta__a" href="/">RIO NEGRO</a>
+            <a className="venta__a" href="/">SALTA</a>
+            <a className="venta__a" href="/">SAN JUAN</a>
+            <a className="venta__a" href="/">SANTA FE</a>
+          </div>
+
+          <div className="venta__points">
+
+            <a className="venta__a" href="/">SANTIAGO DEL ESTERO</a>
+            <a className="venta__a" href="/">TUCUMAN</a>
+          </div>
+        </div>
+
+
       </div>
     </section>
 
@@ -210,19 +254,36 @@ export const Info = () => {
 
     <section className="buses">
       <div className="buses container">
-        <img className="buses__img" src="/Images/nuestra-flota.jpg" alt="" />
-        <p>Flecha Bus cuenta con  la flota más grande del país en constante mantenimiento para asegurar el cumplimiento de los estándares de calidad y seguridad.  Por eso, nuestros buses se ajustan a las necesidades de cada destino, ya sea nacional o internacional.</p>
-        <p>Desde hace 60 años Flecha Bus mantiene el compromiso de llevarte a tu destino con una de las flotas más modernas del país.</p>
-        <p>Cerca de la mitad de la flota de Flechabus está equipada con carrocería Marcopolo G7, uno de los ómnibus de larga distancia más modernos del mercado que cuenta con la última tecnología, que ofrece un alto grado de seguridad y confort.</p>
-        <p>La compañía también cuenta dentro de su parque móvil con carrocerías Metalsur, empresa líder de Argentina.</p>
-        <strong>Parte de nuestra flota de buses está equipada con chasis  Mercedes Benz y  Scania, que cuentan con sistemas de gestión de cambios Powershift y Opticruise, respectivamente, que permiten pasar los cambios de modo manual a modo automático, otorgándole mayor autonomía al conductor.                  </strong>
-        <strong>El sistema Retarder presente en estas unidades brinda asistencia al frenado en pendientes pronunciadas o en ocasione de frenado constante,  dando más seguridad y estabilidad a la unidad.</strong>
-        <strong>Desde 2016, sumamos a  nuestra flota tecnología Euro V, que ayuda reducir la emisión de gases nocivos para el medio ambiente.</strong>
-        <h1>Nuestros Servicios</h1>
+        <img className="buses__img-flota" src="/Images/nuestra-flota.jpg" alt="" />
+        <p className="buses__p">Flecha Bus cuenta con  la flota más grande del país en constante mantenimiento para asegurar el cumplimiento de los estándares de calidad y seguridad.  Por eso, nuestros buses se ajustan a las necesidades de cada destino, ya sea nacional o internacional.</p>
+        <p className="buses__p">Desde hace 60 años Flecha Bus mantiene el compromiso de llevarte a tu destino con una de las flotas más modernas del país.</p>
+        <p className="buses__p">Cerca de la mitad de la flota de Flechabus está equipada con carrocería Marcopolo G7, uno de los ómnibus de larga distancia más modernos del mercado que cuenta con la última tecnología, que ofrece un alto grado de seguridad y confort.</p>
+        <p className="buses__p">La compañía también cuenta dentro de su parque móvil con carrocerías Metalsur, empresa líder de Argentina.</p>
+        <strong className="buses__strong">Parte de nuestra flota de buses está equipada con chasis  Mercedes Benz y  Scania, que cuentan con sistemas de gestión de cambios Powershift y Opticruise, respectivamente, que permiten pasar los cambios de modo manual a modo automático, otorgándole mayor autonomía al conductor.                  </strong>
+        <strong className="buses__strong">El sistema Retarder presente en estas unidades brinda asistencia al frenado en pendientes pronunciadas o en ocasione de frenado constante,  dando más seguridad y estabilidad a la unidad.</strong>
+        <strong className="buses__strong">Desde 2016, sumamos a  nuestra flota tecnología Euro V, que ayuda reducir la emisión de gases nocivos para el medio ambiente.</strong>
+        <h1 className="buses__h1">Nuestros Servicios</h1>
 
-        <div className="buses__wrapper-img">
-          <img className="buses__img" src="/Images/colectivo-1.jpg" alt="" /><img className="buses__img" src="/Images/colectivo-2.jpg" alt="" /><img className="buses__img" src="/Images/colectivo-3.jpg" alt="" /><img className="buses__img" src="/Images/colectivo-4.jpg" alt="" />
+        <div className="buses__wrapper">
+          <div className="buses__wrapper-content">
+            <p className="buses__text">Suite</p>
+            <img className="buses__img" src="/Images/colectivo-1.jpg" alt="" /></div>
+          <div className="buses__wrapper-content">
+            <p className="buses__text">Ejecutivo</p>
+            <img className="buses__img" src="/Images/colectivo-2.jpg" alt="" /></div>
+          <div className="buses__wrapper-content">
+            <p className="buses__text">Cama</p>
+            <img className="buses__img" src="/Images/colectivo-3.jpg" alt="" /></div>
+          <div className="buses__wrapper-content">
+            <p className="buses__text">Semicama</p>
+            <img className="buses__img" src="/Images/colectivo-4.jpg" alt="" /></div>
+
+
+
+
         </div>
+
+
 
       </div>
     </section>

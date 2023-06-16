@@ -1,1 +1,0 @@
-export { Soporte } from "./Soporte";

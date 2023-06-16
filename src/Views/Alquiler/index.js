@@ -1,1 +1,0 @@
-export { Alquiler } from "./Alquiler";
